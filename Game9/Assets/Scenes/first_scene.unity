@@ -1651,7 +1651,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 714789860}
   - 212: {fileID: 714789863}
-  - 114: {fileID: 714789862}
   - 95: {fileID: 714789861}
   m_Layer: 0
   m_Name: Enemy
@@ -1690,18 +1689,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &714789862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11461200, guid: 2d03acdbeffd764458f8e6b4cdd4fdb9,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 714789859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &714789863
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2469,7 +2456,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1159923531}
   - 212: {fileID: 1159923534}
-  - 114: {fileID: 1159923533}
   - 95: {fileID: 1159923532}
   m_Layer: 0
   m_Name: Enemy (3)
@@ -2508,18 +2494,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &1159923533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11422478, guid: 6f3c4ccf6e33a6a4fbf52cf2ba5970b5,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1159923530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1159923534
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3429,7 +3403,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1520897544}
   - 212: {fileID: 1520897547}
-  - 114: {fileID: 1520897546}
   - 95: {fileID: 1520897545}
   m_Layer: 0
   m_Name: Enemy (1)
@@ -3468,18 +3441,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &1520897546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11412314, guid: 6f3c4ccf6e33a6a4fbf52cf2ba5970b5,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1520897543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1520897547
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3854,7 +3815,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1841764643}
   - 212: {fileID: 1841764646}
-  - 114: {fileID: 1841764645}
   - 95: {fileID: 1841764644}
   m_Layer: 0
   m_Name: Enemy (2)
@@ -3893,18 +3853,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &1841764645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11422106, guid: 2d03acdbeffd764458f8e6b4cdd4fdb9,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1841764642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1841764646
 SpriteRenderer:
   m_ObjectHideFlags: 0
