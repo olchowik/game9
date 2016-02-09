@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 /// <summary>
-/// Spawns Enemies at one of 18 Enemy spawners if there is a free spawner available.
+/// Coroutine that spawns Enemies at random interval at the position of one of the free Spawner objects.
 /// </summary>
 public class EnemySpawner : MonoBehaviour {
 

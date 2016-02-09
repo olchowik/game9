@@ -647,8 +647,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 684aadc2f952e0346be51190b551520e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minTime: 1
-  maxTime: 2
+  minTime: 2
+  maxTime: 12
   Enemy: {fileID: 168108, guid: 1f279d185aeb852449a72277e82c46ec, type: 2}
 --- !u!1001 &492317611
 Prefab:
