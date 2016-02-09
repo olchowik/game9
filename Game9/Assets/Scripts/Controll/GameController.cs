@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 /// <summary>
 /// Game Controller is a SINGLETON that allows component to communicate
 /// Trying to keep all inter-component communication via GameController.instance
@@ -10,10 +11,10 @@ public class GameController : MonoBehaviour
 { 
     //Static instance of GameController which allows it to be accessed by any other script.
     public static GameController instance = null;
-    public Creature player;
+    public PlayerCreature player;
     [HideInInspector]
-    public Timer timer;
-    public GameUI gameUI; //This is how we can acced scripts
+    public Timer timer;//This is how we can acces scripts
+    public Canvas gameCanvas; 
 
    
     //Awake is always called before any Start functions
@@ -30,7 +31,7 @@ public class GameController : MonoBehaviour
         #endregion
     }
     void Start() {
-        //gameUI = gameObject.GetComponent<gameUI>();
+
         timer= gameObject.GetComponent<Timer>();
     }
    
@@ -38,7 +39,7 @@ public class GameController : MonoBehaviour
     {
         Destroy(player);
         Destroy(timer);
-        gameUI.sayGameOver();
+        gameCanvas.GetComponent<GameUI>().sayGameOver();
         Debug.Log(" You died ");
     }
 }

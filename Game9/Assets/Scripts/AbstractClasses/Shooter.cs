@@ -1,43 +1,29 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// Class that handles shootimg logic.
+/// </summary>
 public abstract class Shooter : MonoBehaviour {
     public  Bullet bullet;
-    private Creature target=null;
-    private float maxRange = 5;
-    private RaycastHit hit;
-    private bool active = true;
     [SerializeField]
-    private float cooldown = 2;
+    private float speed;
+    private Creature target=null;
     [SerializeField]
     private float frequency = 1;
-    [SerializeField]
-    private int noShots = 3;
+
     public virtual void locateTarget() {
-       
+        target = null;
     }
-    public virtual void startShooting() {
-        InvokeRepeating("shoot",0f, frequency);
-        Invoke("stopShooting", (float)noShots * frequency);
-    }
-    public virtual void stopShooting()
-    {
-        CancelInvoke("shoot");
-    }
+
     public virtual void shoot()
     {
-        Instantiate( bullet, gameObject.transform.position,Quaternion.identity);
-
+        GameObject clone =Instantiate( bullet, gameObject.transform.position,Quaternion.identity) as GameObject;
+        clone.GetComponent<Rigidbody2D>().AddForce(clone.transform.forward * speed);
     }
     // Use this for initialization
     void Start () {
-	
+        //Coroutine is likely a more efficient choice and would enable to change frequency
+        InvokeRepeating("locateTarget",1f,frequency);
 	}
 	
-	// Update is called once per frame
-	void Update () {
-        if (active) {
-            locateTarget();
-        }
-	}
 }
