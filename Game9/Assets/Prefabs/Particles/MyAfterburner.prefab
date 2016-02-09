@@ -10,7 +10,6 @@ GameObject:
   - 4: {fileID: 400000}
   - 199: {fileID: 19900002}
   - 198: {fileID: 19800002}
-  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -77,18 +76,6 @@ MonoBehaviour:
   effectWidth: 2
   effectDistance: 32
   force: 140
---- !u!114 &11400002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b878b2bd27dca747855179c7ca76010, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minColour: {r: 1, g: 1, b: 1, a: 1}
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1

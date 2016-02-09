@@ -12,6 +12,7 @@ GameObject:
   - 95: {fileID: 9591108}
   - 50: {fileID: 5084054}
   - 58: {fileID: 5857794}
+  - 114: {fileID: 11470230}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 171760}
   m_LocalRotation: {x: 0, y: -0.009826414, z: 0, w: 0.9999517}
-  m_LocalPosition: {x: 0.25, y: 0, z: 0.01}
+  m_LocalPosition: {x: 1.127, y: 0.226, z: 0.027}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -38,10 +39,10 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 171760}
-  m_UseAutoMass: 0
+  m_UseAutoMass: 1
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.01
   m_GravityScale: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -61,7 +62,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.32
+  m_Radius: 0.1
 --- !u!95 &9591108
 Animator:
   serializedVersion: 3
@@ -79,6 +80,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11470230
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 171760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3190c44dac32d7d4cb35573ee4d95df2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21240534
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -103,7 +115,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -642795061
+  m_SortingLayerID: -1503149931
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: d83f03db8d68e364f97a6ad48bffa500, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -115,7 +127,27 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_SortingLayerID
+      value: -1503149931
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_AngularDrag
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_GravityScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_UseAutoMass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 171760}

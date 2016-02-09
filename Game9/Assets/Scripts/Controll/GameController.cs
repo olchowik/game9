@@ -14,9 +14,9 @@ public class GameController : MonoBehaviour
     public PlayerCreature player;
     [HideInInspector]
     public Timer timer;//This is how we can acces scripts
-    public Canvas gameCanvas; 
+    public Canvas gameCanvas;
+    public Bullet bullet;
 
-   
     //Awake is always called before any Start functions
     void Awake()
     {
