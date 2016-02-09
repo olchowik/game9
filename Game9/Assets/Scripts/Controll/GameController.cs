@@ -1,15 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
-//using System.Collections.Generic;       //Allows us to use Lists. 
+/// <summary>
+/// Game Controller is a SINGLETON that allows component to communicate
+/// Trying to keep all inter-component communication via GameController.instance
+/// Other way to do game architecture would be to use c#vents or Unity Events/Messaging system.  
+/// </summary>
 
-    public class GameController : MonoBehaviour
+public class GameController : MonoBehaviour
 { 
     //Static instance of GameController which allows it to be accessed by any other script.
     public static GameController instance = null;
     public Creature player;
     [HideInInspector]
     public Timer timer;
-    //[HideInInspector] public MapGenerator mapGenerator;
+    public GameUI gameUI; //This is how we can acced scripts
 
    
     //Awake is always called before any Start functions
@@ -26,7 +30,7 @@ using System.Collections;
         #endregion
     }
     void Start() {
-   //     mapGenerator = gameObject.GetComponent<MapGenerator>();
+        //gameUI = gameObject.GetComponent<gameUI>();
         timer= gameObject.GetComponent<Timer>();
     }
    
@@ -34,6 +38,7 @@ using System.Collections;
     {
         Destroy(player);
         Destroy(timer);
+        gameUI.sayGameOver();
         Debug.Log(" You died ");
     }
 }

@@ -1,10 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-
+/// <summary>
+/// Updates GUI, displays time and health
+/// </summary>
 public class GameUI : MonoBehaviour {
     [SerializeField]
     private Text timeLabel;
+    [SerializeField]
+    private Text msgLabel;
     [SerializeField]
     private Slider healthSliser;
 
@@ -21,5 +25,9 @@ public class GameUI : MonoBehaviour {
             timeLabel.text = "Time: " +GameController.instance.timer.TimerValue.ToString();
         //update health
         healthSliser.value = GameController.instance.player.Health;
+    }
+    public void sayGameOver()
+    {
+        msgLabel.text = "GAME OVER";
     }
 }
