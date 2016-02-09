@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 /// <summary>
-/// Simple spawner
+/// Simple object spawner.
 /// </summary>
 public class Spawner : MonoBehaviour {
     /// <summary>
-    /// Spawns object at Spawner position and rotation
+    /// Spawns clone of the parameter objectt Spawner position and rotation.
+    /// Sets up layer of the new object to parameter obect layer.
     /// </summary>
     /// <param name="obj"></param>
     public void spawnObject(GameObject obj)
